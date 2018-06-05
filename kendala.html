@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penyakit dan perawatan</title>
+  <link rel="icon" href="assets/img/icon.png"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Source Lokal -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/perlu.css">
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/angular.min.js"></script>
+  <script type="text/javascript" src="assets/js/angular-animate.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="assets/js/util.js"></script> 
+  <script type="text/javascript" src="assets/js/popper.js"></script> -->
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/fontawesome-all.min.js"></script>
+  
+<!-- Source CDN -->
+  <!-- <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+
+  <style type="text/css">
+      .background
+        {
+          background-image: url(assets/img/bg.png);
+          width: 100%;
+          height: auto;
+          background-size: cover;
+          background-repeat: no-repeat;
+          
+        }
+
+  </style>
+</head>
+<body class="background" ng-app="myApp">
+
+<div class="navbar-full">
+<nav class="navbar navbar-expand-md navbar-dark header fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="keuntungan"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="nav navbar-nav ml-auto" >
+            
+          <li><a href="biaya.html" class="text">Anggaran</a></li>
+          <li><a href="tempat.html" class="text">Tempat</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Udang
+            </a>
+            <div class="dropdown-menu" >
+              <a class="dropdown-item" href="pilihbenih.html">Pemilihan Benih</a>
+              <a class="dropdown-item" href="rawatbenih.html">Perawatan Benih</a>
+              <a class="dropdown-item" href="persial.html">Parsial</a>
+              <a class="dropdown-item" href="panen.html">Panen</a>
+            </div>
+          </li>
+          
+        <li><a href="kendala.html" class="text">Kendala</a></li>
+        <li><a href="signup.html" class="text">Masuk/Daftar</a></li>
+        <li><a href="about.html" class="text">Tentang Kami</a></li>
+      </ul>
+  </div> 
+</nav>
+</div>
+
+<div class="container area-konten">
+   <h2 class="text-judul color">Penyakit dan perawatan</h2><br> 
+   <div class="row" style="margin-top: 90px">
+    
+            <div class="col-md-4">
+              <div class="mb-4">
+                  <h3>WHITE SPOT SYNDROME (UDANG)</h3>                  
+                  <div ><img src="assets/img/sakit1.jpg" alt="Los Angeles" width="350" height="250"></div>
+                   <h5>Selengkapnya, klik disini: <input type="checkbox" ng-model="myCheck"></h5>
+                   <!-- <div class="div-custom" ng-show="myCheck"><p>Penyakit WFD atau disebut juga penyakit kotoran putih.</p><br><p>Untuk itu, mengatasi penyakit WFD ini dapat dilakukan dengan meningkatkan kebersihan media hidup udang, di antaranya:
+                    • Menambahkan disinfektan berbagai jenis agar ampuh membunuh organisme merugikan. Contohnya seperti kaporit (10 ppm selama 7 hari), BKC atau Benzalkonium Chloride 100% (2 ppm selama 2 hari), dan formaldehid (10-15 ppm selama 5 hari).
+                    • Menambahkan probiotik yang menekan pertumbuhan parasit dan bakteri Vibrio. Bisa juga menambahkan bawang putih sebanyak 5-10 gram/kg pakan.
+                    • Mengurangi padat tebar. Padat tebar maksimal 80 ekor/m2 terbukti mampu menghilangkan wabah WFD.
+                    • Menerapkan biosekuriti, yaitu sistem yang meminimalisir masuk-keluarnya patogen dari luar seperti membuat tandon
+                    </p></div> -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-4">
+                  <h3>WHITE FECES DISEASE (UDANG)</h3>
+                  <div ><img src="assets/img/sakit2.jpg" alt="Los Angeles" width="350" height="250"></div>
+                  <h5>Selengkapnya, klik disini: <input type="checkbox" ng-model="myInfo"></h5>
+                   <!-- <div class="div-custom" ng-show="myInfo"><p>Penyakit bintik putih ini disebabkan oleh virus (WSSV, White Spot Syndrome Virus) yang sampai saat ini belum ditemukan obatnya. </p><br><p>Meski tidak ada obatnya, hal terbaik yang bisa dilakukan adalah dengan tindakan pencegahan, di antaranya:
+                    • Memilih benih berkualitas dan bebas penyakit (bisa ditanyakan pada penjual benih, apakah benih sudah dicek kesehatannya dan bukan berasal dari satu induk).
+                    • Hindari pakan perlebih karena akan menurunkan kualitas air yang akan berdampak pada tingkat daya tahan tubuh udang.
+                    • Memusnahkan udang yang telah terinfeksi agar penyakit tidak menyebar.
+                    • Segera lakukan pemanenan, jika udang sudah layak dan siap untuk dijual.
+                    </p></div> -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-4">
+                  <h3>EARLY MORTALITY SYNDROME (UDANG)</h3>
+                  <div ><img src="assets/img/sakit3.jpg" alt="Los Angeles" width="350" height="250"></div>
+                  <h5>Selengkapnya, klik disini: <input type="checkbox" ng-model="myData" data-toggle="modal" data-target="#myModal"></h5>
+                   <!-- <div class="div-custom" ng-show="myData"><p>Penyakit EMS merupakan salah satu penyakit pada udang yang menyebabkan kematian massal di awal budidaya (usia udang 20-30 hari). Bakteri Vibrio yang menyebabkan penyakit ini merusak organ hepatopankreas udang sehingga udang tidak nafsu makan. Ciri-ciri udang yang terjangkiti adalah lemah, ususnya kosong (bening), dan organ hepatopankreasnya tampak pucat dan lembek. Meskipun fatal pada udang, tapi bakteri Vibrio tidak memiliki dampak pada manusia. Proses pembekuan pun dapat menonaktifkan bakteri tersebut.</p></div>  --> 
+              </div>
+            </div>
+              <div class="container-fluid">
+      <div class="ta" ng-show="myCheck"><p>Penyakit WFD atau disebut juga penyakit kotoran putih.</p><br><p>Untuk itu, mengatasi penyakit WFD ini dapat dilakukan dengan meningkatkan kebersihan media hidup udang, di antaranya:
+                    • Menambahkan disinfektan berbagai jenis agar ampuh membunuh organisme merugikan. Contohnya seperti kaporit (10 ppm selama 7 hari), BKC atau Benzalkonium Chloride 100% (2 ppm selama 2 hari), dan formaldehid (10-15 ppm selama 5 hari).
+                    • Menambahkan probiotik yang menekan pertumbuhan parasit dan bakteri Vibrio. Bisa juga menambahkan bawang putih sebanyak 5-10 gram/kg pakan.
+                    • Mengurangi padat tebar. Padat tebar maksimal 80 ekor/m2 terbukti mampu menghilangkan wabah WFD.
+                    • Menerapkan biosekuriti, yaitu sistem yang meminimalisir masuk-keluarnya patogen dari luar seperti membuat tandon
+                    </p></div>
+       <div class="ta" ng-show="myInfo"><p>Penyakit bintik putih ini disebabkan oleh virus (WSSV, White Spot Syndrome Virus) yang sampai saat ini belum ditemukan obatnya. </p><br><p>Meski tidak ada obatnya, hal terbaik yang bisa dilakukan adalah dengan tindakan pencegahan, di antaranya:
+                    • Memilih benih berkualitas dan bebas penyakit (bisa ditanyakan pada penjual benih, apakah benih sudah dicek kesehatannya dan bukan berasal dari satu induk).
+                    • Hindari pakan perlebih karena akan menurunkan kualitas air yang akan berdampak pada tingkat daya tahan tubuh udang.
+                    • Memusnahkan udang yang telah terinfeksi agar penyakit tidak menyebar.
+                    • Segera lakukan pemanenan, jika udang sudah layak dan siap untuk dijual.
+                    </p></div>
+       <div class="ta" ng-show="myData"><p>Penyakit EMS merupakan salah satu penyakit pada udang yang menyebabkan kematian massal di awal budidaya (usia udang 20-30 hari). Bakteri Vibrio yang menyebabkan penyakit ini merusak organ hepatopankreas udang sehingga udang tidak nafsu makan. Ciri-ciri udang yang terjangkiti adalah lemah, ususnya kosong (bening), dan organ hepatopankreasnya tampak pucat dan lembek. Meskipun fatal pada udang, tapi bakteri Vibrio tidak memiliki dampak pada manusia. Proses pembekuan pun dapat menonaktifkan bakteri tersebut.</p></div>                            
+</div>
+   </div>
+</div>
+
+
+<!-- Button to Open the Modal -->
+ <!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button> -->
+
+  <!-- The Modal -->
+  <!-- <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        Modal Header
+        <div class="modal-header">
+          <h4 class="modal-title">EARLY MORTALITY SYNDROME (UDANG)</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        Modal body
+        <div class="modal-body">
+          Penyakit EMS merupakan salah satu penyakit pada udang yang menyebabkan kematian massal di awal budidaya (usia udang 20-30 hari). Bakteri Vibrio yang menyebabkan penyakit ini merusak organ hepatopankreas udang sehingga udang tidak nafsu makan. Ciri-ciri udang yang terjangkiti adalah lemah, ususnya kosong (bening), dan organ hepatopankreasnya tampak pucat dan lembek. Meskipun fatal pada udang, tapi bakteri Vibrio tidak memiliki dampak pada manusia. Proses pembekuan pun dapat menonaktifkan bakteri tersebut.
+        </div>
+        
+        Modal footer
+        
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div> -->
+<script>
+var app = angular.module('myApp', ['ngAnimate']);
+</script>
+
+
+  <footer class="container-fluid">
+    <p class="custom-footer"><i class="far fa-copyright"></i> 2018 Vanamie - All Rights Reserved || Design by Kelompok 7</p>
+</footer>
+</body>
+</html>

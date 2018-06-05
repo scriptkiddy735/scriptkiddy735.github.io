@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Source Lokal -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/perlu.css">
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/angular.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="assets/js/util.js"></script> 
+  <script type="text/javascript" src="assets/js/popper.js"></script> -->
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/fontawesome-all.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/w3.css">
+  
+<!-- Source CDN -->
+  <!-- <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+	<style type="text/css">
+		.text{
+    	text-align: center; color: #ffffff; text-decoration-color: white; font-size: 28px;  font-family: "neuton";margin-right: 10px;margin-left: 10px;
+    	}
+
+    	.header{
+    		background-color: #189bd3;
+    	}
+    
+	    .background
+				{
+					background-image: url(assets/img/bg.png);
+					width: 100%;
+					height: auto;
+					background-size: cover;
+					background-repeat: no-repeat;
+					
+				}
+
+				footer {
+      background-color: #005073;
+      color: white;
+      padding: 15px;
+      height: 60px;
+    }
+	</style>
+
+</head>
+<body class="background">
+<div class="navbar-full">
+<nav class="navbar navbar-expand-md navbar-dark header fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="keuntungan"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <div class="col-9"></div>
+  <button type="button" class="col-1 btn btn-primary " onclick="keluar();">Keluar</button>
+</nav>
+</div>
+
+<div class="container area-konten">
+		<div class="row">
+			<div class="col-4 container-fluid" style="background-color: #117dac;height: 800px;">
+				<div class="col-md-12" ><img class="img-fluid rounded-circle" src="assets/img/sakit3.jpg" style="margin-top: 30px;"></div>
+				<div class="container" style="color: white;margin: 10px 0px 10px 0px;text-align: center;"><h2 id="usernamePrint"></h2></div><br>
+				    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				      <a class="nav-link active text-judul ds" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Order</a>
+				      <a class="nav-link text-judul ds" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Chatting</a>
+				      
+     
+    </div>
+			</div>
+			<div class="col-8" style="background-color: white;height: 800px;">
+				<div class="container">
+					
+					<div class="tab-content" id="v-pills-tabContent">
+					      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+					      		<div style="margin-top: 30px;">
+					      			
+					      		</div>
+					      		<div><div ng-app="myShoppingList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin" style="max-width:400px;">
+								  <header class="w3-container w3-light-grey w3-padding-16">
+								    <h3>Masukkan jenis udang yang akan anda beli</h3>
+								  </header>
+								  <ul class="w3-ul">
+								    <li ng-repeat="x in products" class="w3-padding-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+								  </ul>
+								  <div class="w3-container w3-light-grey w3-padding-16">
+								    <div class="w3-row w3-margin-top">
+								      <div class="w3-col s10">
+								        <input placeholder="Ketikkan disini" ng-model="addMe" class="w3-input w3-border w3-padding">
+								      </div>
+								      <div class="w3-col s2">
+								        <button ng-click="addItem()" class="w3-btn w3-padding w3-green" style="width: 75px;">Tambah</button>
+								      </div>
+								    </div>
+								    <p class="w3-text-red">{{errortext}}</p>
+								  </div>
+								</div>
+								</div>
+								
+
+					      </div>
+					      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><div class="fb-comments" data-href="https://www.w3schools.com/howto/howto_css_contact_chips.asp" data-numposts="5"></div></div>
+					      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">wkwk</div>
+					      
+					</div>
+				</div>
+			</div>
+		</div>
+  <div class="row">
+  <div class="col-3">
+
+  </div>
+  <div class="col-9">
+
+  </div>
+</div>
+	</div>
+<footer class="container-fluid">
+    <p class="custom-footer"><i class="far fa-copyright"></i> 2018 Vanamie - All Rights Reserved || Design by Kelompok 7</p>
+</footer>
+<div id="fb-root"></div>
+	<script type="text/javascript">
+		var username;
+		username = localStorage.getItem("username");
+		document.getElementById("usernamePrint").innerHTML = username;
+
+
+		var app = angular.module("myShoppingList", []); 
+app.controller("myCtrl", function($scope) {
+    $scope.products = [];
+    $scope.addItem = function () {
+        $scope.errortext = "";
+        if (!$scope.addMe) {return;}
+        if ($scope.products.indexOf($scope.addMe) == -1) {
+            $scope.products.push($scope.addMe);
+        } else {
+            $scope.errortext = "Maaf anda sudah memilih item ini sebelumnya.";
+        }
+    }
+    $scope.removeItem = function (x) {
+        $scope.errortext = "";    
+        $scope.products.splice(x, 1);
+    }
+});
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+function keluar() {
+    window.location="signin.html";
+  }
+	</script>
+</body>
+</html>

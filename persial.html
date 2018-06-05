@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Persial</title>
+  <link rel="icon" href="assets/img/icon.png">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Source Lokal -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/perlu.css">
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="assets/js/util.js"></script> 
+  <script type="text/javascript" src="assets/js/popper.js"></script> -->
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/fontawesome-all.min.js"></script>
+  
+<!-- Source CDN -->
+  <!-- <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+  <style type="text/css">
+      .background-page{
+        background-image: url(assets/img/bg.png);
+        width: 100%; height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;        
+      }
+
+      .header-tabel{
+        background-color: #107dac;color: white
+      }
+
+      .isi-tabel{
+        background-color: #ffffff;color: black; 
+        height: 50px; text-align: center; top: 50%;
+        left: 50%;
+      }
+
+  </style>
+</head>
+<body >
+<body class="background-page">
+<div class="navbar-full">
+<nav class="navbar navbar-expand-md navbar-dark header fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="keuntungan"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="nav navbar-nav ml-auto" >
+            
+          <li><a href="biaya.html" class="text">Anggaran</a></li>
+          <li><a href="tempat.html" class="text">Tempat</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Udang
+            </a>
+            <div class="dropdown-menu" >
+              <a class="dropdown-item" href="pilihbenih.html">Pemilihan Benih</a>
+              <a class="dropdown-item" href="rawatbenih.html">Perawatan Benih</a>
+              <a class="dropdown-item" href="persial.html">Parsial</a>
+              <a class="dropdown-item" href="panen.html">Panen</a>
+            </div>
+          </li>
+          
+        <li><a href="kendala.html" class="text">Kendala</a></li>
+        <li><a href="signup.html" class="text">Masuk/Daftar</a></li>
+        <li><a href="about.html" class="text">Tentang Kami</a></li>
+      </ul>
+  </div> 
+</nav>
+</div>
+
+<div class="container area-konten">   
+      <h2 class="text-judul color">Persial</h2><br>
+      <table class="table table-bordered">
+        <thead>
+          <tr class="header-tabel">
+            <th>Parsial</th>
+            <th>Jumlah</th>
+            <th>Ukuran</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="isi-tabel">Parsial pertama</td>
+            <td class="isi-tabel">300 Kg</td>
+            <td class="isi-tabel">usia 70 hari ukuran 75 (75 ekor/Kg)</td>
+            <td class="isi-tabel">Rp.50.000/kg</td>
+          </tr>
+          <tr>
+            <td class="isi-tabel">Parsial kedua</td>
+            <td class="isi-tabel">500 Kg</td>
+            <td class="isi-tabel">usia 85 hari ukuran 52(52 ekor/kg)</td>
+            <td class="isi-tabel">Rp.55.000/kg</td>
+           
+          </tr>
+          <tr>
+            <td class="isi-tabel">Parsial ketiga</td>
+            <td class="isi-tabel">700 Kg</td>
+            <td class="isi-tabel">usia 100 hari ukuran 42(42 ekor/kg)</td>
+            <td class="isi-tabel">Rp.60.000/kg</td>
+          </tr>
+        </tbody>
+      </table>
+<br>
+
+<div class="cfd color"> Login untuk <button type="button" class="btn btn-primary btnorder" onclick="goOrder();">Order</button> sekarang</div>
+
+
+    
+   <div class="row pembatas"></div>
+   <div class="container jarakshare">
+    <div class="row">
+        <div class="col-large-2 col-md-2 col-sm-2" style="margin-right: 10px;">
+          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Bagikan</a></div>
+        </div>
+        <div class="col-large-2 col-md-2 col-sm-2">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"  ></script>
+        </div>
+        <div class="col-large-2 col-md-2 col-sm-2"></div>
+        <div class="col-large-2 col-md-2 col-sm-2"></div>
+        <div class="col-large-2 col-md-2 col-sm-2"></div>
+        <div class="col-large-2 col-md-2 col-sm-2"></div>     
+    </div>
+   </div>
+</div>
+<script type="text/javascript">
+  function goOrder() {
+    window.location="signup.html";
+  }
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<footer class="container-fluid">
+    <p class="custom-footer"><i class="far fa-copyright"></i> 2018 Vanamie - All Rights Reserved || Design by Kelompok 7</p>
+</footer>
+</body>
+</html>
